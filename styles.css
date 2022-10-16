@@ -143,13 +143,13 @@ article p {
 @media (max-width: 650px) {
     .container {
         flex-direction: column;
-        width: 375px;
+        width: 300px;
         height: 80%;
         margin: 5rem auto;
     }
 
     .card {
-        height: 380px;
+        height: 400px;
     }
 
     .card:first-of-type {
