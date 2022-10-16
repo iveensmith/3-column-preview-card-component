@@ -10,10 +10,10 @@
   --clr-primary-400: hsl(184, 100%, 22%);
   --clr-primary-500: hsl(179, 100%, 13%);
 
-  --clr-accent-300: hsl(14deg  84%  52%);
-  --clr-accent-400: hsl(39deg  100%  50%);
-  --clr-accent-500: hsl(142deg  94%  34%);
-  --clr-accent-600: hsl(199deg  99%  50%);
+  --clr-accent-300: hsl(14deg 84% 52%);
+  --clr-accent-400: hsl(39deg 100% 50%);
+  --clr-accent-500: hsl(142deg 94% 34%);
+  --clr-accent-600: hsl(199deg 99% 50%);
 
   --fs-400: 0.9375rem;
 
@@ -50,19 +50,24 @@
 }
 
 .ff-400 {
-    font-family: var(--ff-400);
+  font-family: var(--ff-400);
 }
 
 .ff-700 {
-    font-family: var(--ff-700);
+  font-family: var(--ff-700);
 }
 
 /******* General Styling ********/
 
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
 .container {
   width: 900px;
   height: 550px;
-  margin: 8rem auto;
   display: flex;
 }
 
@@ -74,11 +79,11 @@
 }
 
 .card:first-of-type {
-    border-radius: 8px 0  0 8px;
+  border-radius: 8px 0 0 8px;
 }
 
 .card:last-of-type {
-    border-radius: 0 8px 8px 0;
+  border-radius: 0 8px 8px 0;
 }
 
 .btn {
@@ -93,17 +98,17 @@
 }
 
 .btn2 {
-    color: var(--clr-primary-400);
+  color: var(--clr-primary-400);
 }
 
 .btn3 {
-    color: var(--clr-primary-500);
+  color: var(--clr-primary-500);
 }
 
 .btn:hover {
-    border-radius: 25px;
-    background: orangered;
-    color: #f2f2f2;
+  border-radius: 25px;
+  background: orangered;
+  color: #f2f2f2;
 }
 
 article h1 {
@@ -114,59 +119,52 @@ article h1 {
 }
 
 article p {
-    color: #f2f2f2;
-    line-height: 2;
-    
+  color: #f2f2f2;
+  line-height: 2;
 }
-
 
 @media (max-width: 1024px) {
-    .container {
-        width: 600px;
-    }
+  .container {
+    width: 600px;
+  }
 
-    .card {
-        padding: 30px;
-    }
+  .card {
+    padding: 30px;
+  }
 
-   article h1 {
+  article h1 {
     padding: 25px 0;
+  }
 
-   }
-
-   .btn {
+  .btn {
     font-size: 13px;
-   }
+  }
 }
-
 
 @media (max-width: 650px) {
-    .container {
-        flex-direction: column;
-        width: 300px;
-        height: 80%;
-        margin: 5rem auto;
-    }
+  .container {
+    flex-direction: column;
+    width: 300px;
+    height: 80%;
+  }
 
-    .card {
-        height: 400px;
-    }
+  .card {
+    height: 400px;
+  }
 
-    .card:first-of-type {
-        border-radius: 8px 8px 0 0;
-    }
+  .card:first-of-type {
+    border-radius: 8px 8px 0 0;
+  }
 
-    .card:last-of-type {
-        border-radius: 0 0 8px 8px;
-    }
+  .card:last-of-type {
+    border-radius: 0 0 8px 8px;
+  }
 
-    article h1 {
-        padding: 15px 0; 
-    }
+  article h1 {
+    padding: 15px 0;
+  }
 
-    article p {
-        font-size: 13px;
-    }
+  article p {
+    font-size: 13px;
+  }
 }
-
-
